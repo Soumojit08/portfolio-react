@@ -1,6 +1,5 @@
 import { ReactLenis, useLenis } from "lenis/react";
 import { Route, Routes } from "react-router-dom";
-import Nav from "./components/Nav";
 import Home from "./components/Home";
 import CardNav from "./components/CardNav";
 import logo from "./assets/logo-removebg-preview.png";
@@ -57,7 +56,6 @@ const App = () => {
       />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/nav" element={<Nav />} />
       </Routes>
     </div>
   );
