@@ -6,9 +6,13 @@ const Hero = () => {
     <div className="flex flex-col items-center top-30  px-6 text-center relative min-h-screen ">
       {/* avtar */}
       <div className="name-sec flex gap-4 items-center">
-        <div className="h-20 w-20 bg-[#FFFFE3] rounded-full relative overflow-hidden">
+        <motion.div
+          drag
+          dragConstraints={{ left: 10, right: 10, top: 0, bottom: 0 }}
+          className="h-20 w-20 bg-[#FFFFE3] rounded-full relative overflow-hidden cursor-pointer"
+        >
           <img className="absolute object-cover w-full " src={photo} />
-        </div>
+        </motion.div>
         <div className="py-4 px-6 rounded-4xl border-1 border-zinc-800">
           <h2 className="text-xl">Hello, I'm Soumojit</h2>
         </div>
@@ -35,13 +39,8 @@ const Hero = () => {
         <motion.button
           drag
           dragConstraints={{ left: 10, right: 10, top: 0, bottom: 0 }}
-          whileHover={{ backgroundColor: "#18A0FB" }}
-          dragTransition={{
-            min: 0,
-            max: 100,
-            bounceStiffness: 100,
-          }}
-          className="bg-transparent py-4 px-5 font-semibold border-1 border-zinc-800 rounded-4xl cursor-pointer flex items-center gap-2"
+          whileHover={{ backgroundColor: "#ffffe3", color: "#111" }}
+          className="bg-transparent py-4 px-6 font-semibold border-1 border-zinc-800 rounded-4xl text-lg cursor-pointer flex items-center gap-2"
         >
           <motion.span
             animate={{ opacity: [1, 0.2, 1], scale: [1, 0.7, 1] }}
