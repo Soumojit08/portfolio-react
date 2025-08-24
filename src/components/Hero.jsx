@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col items-center top-30  px-6 text-center relative min-h-screen ">
+    <div className="flex flex-col items-center top-25  px-6 text-center relative min-h-screen ">
       {/* avtar */}
       <div className="name-sec flex gap-4 items-center">
         <motion.div
@@ -49,6 +49,18 @@ const Hero = () => {
           ></motion.span>
           <span>Let's Connect</span>
         </motion.button>
+      </div>
+
+      {/* role */}
+      <div className="name-sec flex flex-row-reverse gap-2 items-center">
+        <h1 className="text-8xl font-medium text-[#17F1D1]">
+          <span className="text-[#FFFFE3]">&</span> DEVELOPER 
+          <span className="h-4 w-4 inline-block bg-[#17F1D1] ml-1"></span>
+        </h1>
+        <div className="flex flex-col">
+          <h5>// UI-UX Designer</h5>
+          <h5>Full-Stack Developer</h5>
+        </div>
       </div>
     </div>
   );
