@@ -35,9 +35,20 @@ const Hero = () => {
         <motion.button
           drag
           dragConstraints={{ left: 10, right: 10, top: 0, bottom: 0 }}
-          className="bg-transparent py-4 px-6 font-semibold border-1 border-zinc-800 rounded-4xl cursor-pointer"
+          whileHover={{ backgroundColor: "#18A0FB" }}
+          dragTransition={{
+            min: 0,
+            max: 100,
+            bounceStiffness: 100,
+          }}
+          className="bg-transparent py-4 px-5 font-semibold border-1 border-zinc-800 rounded-4xl cursor-pointer flex items-center gap-2"
         >
-          Let's Connect
+          <motion.span
+            animate={{ opacity: [1, 0.2, 1], scale: [1, 0.7, 1] }}
+            transition={{ repeat: Infinity, duration: 1.2 }}
+            className="h-4 w-4 rounded-full bg-[#37C713] inline-block"
+          ></motion.span>
+          <span>Let's Connect</span>
         </motion.button>
       </div>
     </div>
