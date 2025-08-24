@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Nav from "./components/Nav";
 import Home from "./components/Home";
 import CardNav from "./components/CardNav";
-import logo from "./assets/react.svg";
+import logo from "./assets/logo-removebg-preview.png";
 
 const App = () => {
   const lenis = useLenis((lenis) => {
@@ -13,7 +13,7 @@ const App = () => {
   const items = [
     {
       label: "About",
-      bgColor: "#0D0716",
+      bgColor: "#191917",
       textColor: "#fff",
       links: [
         { label: "Company", ariaLabel: "About Company" },
@@ -22,7 +22,7 @@ const App = () => {
     },
     {
       label: "Projects",
-      bgColor: "#170D27",
+      bgColor: "#191917",
       textColor: "#fff",
       links: [
         { label: "Featured", ariaLabel: "Featured Projects" },
@@ -31,7 +31,7 @@ const App = () => {
     },
     {
       label: "Contact",
-      bgColor: "#271E37",
+      bgColor: "#191917",
       textColor: "#fff",
       links: [
         { label: "Email", ariaLabel: "Email us" },
