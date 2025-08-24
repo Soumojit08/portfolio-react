@@ -16,8 +16,8 @@ const App = () => {
       bgColor: "#191917",
       textColor: "#fff",
       links: [
-        { label: "Company", ariaLabel: "About Company" },
-        { label: "Careers", ariaLabel: "About Careers" },
+        { label: "Education", ariaLabel: "About Company" },
+        { label: "Certificates", ariaLabel: "About Careers" },
       ],
     },
     {
@@ -25,8 +25,9 @@ const App = () => {
       bgColor: "#191917",
       textColor: "#fff",
       links: [
-        { label: "Featured", ariaLabel: "Featured Projects" },
-        { label: "Case Studies", ariaLabel: "Project Case Studies" },
+        { label: "Medicon", ariaLabel: "Project 1" },
+        { label: "Blog App", ariaLabel: "Project 2" },
+        { label: "Photo Editor", ariaLabel: "Project 3" },
       ],
     },
     {
@@ -34,8 +35,8 @@ const App = () => {
       bgColor: "#191917",
       textColor: "#fff",
       links: [
-        { label: "Email", ariaLabel: "Email us" },
-        { label: "Twitter", ariaLabel: "Twitter" },
+        { label: "Email", ariaLabel: "Email me" },
+        { label: "Github", ariaLabel: "Github" },
         { label: "LinkedIn", ariaLabel: "LinkedIn" },
       ],
     },
