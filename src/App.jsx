@@ -12,8 +12,9 @@ const App = () => {
   const items = [
     {
       label: "About",
-      bgColor: "#191917",
-      textColor: "#fff",
+      // bgColor: "#191917",
+      bgColor: "#A374FF",
+      textColor: "#1e1e1e",
       links: [
         { label: "Education", ariaLabel: "About Company" },
         { label: "Certificates", ariaLabel: "About Careers" },
@@ -21,8 +22,8 @@ const App = () => {
     },
     {
       label: "Projects",
-      bgColor: "#191917",
-      textColor: "#fff",
+      bgColor: "#FFD074",
+      textColor: "#1e1e1e",
       links: [
         { label: "Medicon", ariaLabel: "Project 1" },
         { label: "Blog App", ariaLabel: "Project 2" },
@@ -31,8 +32,8 @@ const App = () => {
     },
     {
       label: "Contact",
-      bgColor: "#191917",
-      textColor: "#fff",
+      bgColor: "#17F1D1",
+      textColor: "#1e1e1e",
       links: [
         { label: "Email", ariaLabel: "Email me" },
         { label: "Github", ariaLabel: "Github" },
