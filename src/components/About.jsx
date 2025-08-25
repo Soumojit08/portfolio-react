@@ -79,12 +79,14 @@ const About = () => {
                 key={card.id}
                 whileHover={{ y: -6 }}
                 transition={{ type: "spring", stiffness: 120 }}
-                className="bg-[#191917] rounded-xl border h-96 border-zinc-700 p-6 flex flex-col gap-4 justify-end"
+                className="bg-[#191917] rounded-xl border h-96 border-zinc-700 p-6 flex flex-col justify-end items-start gap-y-4"
                 aria-label={card.role}
               >
-                <Icon size={48} />
-                <h3 className="text-lg font-semibold ">{card.role}</h3>
-                <p className="text-sm text-zinc-300 flex-1">{card.desc}</p>
+                <Icon size={48} color={card.color} />
+                <div style={{ color: card.color }}>
+                  <h3 className="text-xl font-semibold">{card.role}</h3>
+                  <p className="text-sm mt-2">{card.desc}</p>
+                </div>
               </motion.article>
             );
           })}
