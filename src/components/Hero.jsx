@@ -1,41 +1,30 @@
 import photo from "../assets/photo.png";
 import { motion } from "framer-motion";
+import cursor from "../assets/Cursor.svg";
+import dev from "../assets/dev.svg";
+import usernamer from "../assets/username.svg";
 
 const FloatingCursors = () => {
   const cursors = [
-    { id: 1, color: "#4EA8FF", pill: "Dev", start: { top: "70%", left: "8%" } },
-    {
-      id: 2,
-      color: "#A374FF",
-      pill: "thegr8binil",
-      start: { top: "45%", left: "78%" },
-    },
-    {
-      id: 3,
-      color: "#FFD074",
-      pill: "Product",
-      start: { top: "8%", left: "48%" },
-    },
+    { id: 1, svg: cursor, start: { top: "20%", left: "8%" } },
+    { id: 2, svg: dev, start: { top: "30%", left: "78%" } },
+    { id: 3, svg: usernamer, start: { top: "8%", left: "48%" } },
   ];
 
   return (
     <>
       {cursors.map((c, i) => {
-        // small, desynced motion patterns
-        const dur = 6 + i * 1.5;
-        const xSeq = [0, -40 + i * 10, 60 - i * 20, 0];
-        const ySeq = [0, -30 + i * 5, 50 - i * 15, 0];
-
+        const dur = 5 + i * 1.2;
         return (
           <motion.div
             key={c.id}
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: [0.6, 1, 0.7, 0.9], scale: [0.9, 1, 0.95, 1] }}
+            initial={{ opacity: 1, scale: 2.5 }}
+            animate={{ opacity: [1], scale: [2.5] }}
             transition={{
               repeat: Infinity,
               duration: dur,
               ease: "easeInOut",
-              delay: i * 0.3,
+              delay: i * 0.12,
             }}
             style={{
               position: "absolute",
@@ -47,43 +36,29 @@ const FloatingCursors = () => {
             className="select-none"
           >
             <motion.div
-              animate={{ x: xSeq, y: ySeq }}
+              animate={{ x: [0, 12, -8, 0], y: [0, -6, 10, 0] }}
               transition={{
                 repeat: Infinity,
                 duration: dur,
                 ease: "easeInOut",
                 repeatType: "loop",
-                delay: i * 0.2,
+                delay: i * 0.08,
               }}
-              className="flex items-center gap-2"
             >
-              {/* custom cursor (triangle) */}
-              <div
-                style={{
-                  width: 0,
-                  height: 0,
-                  borderLeft: "10px solid transparent",
-                  borderRight: "6px solid transparent",
-                  borderBottom: `16px solid ${c.color}`,
-                  transform: "rotate(-30deg)",
-                  filter: "drop-shadow(0 2px 6px rgba(0,0,0,0.35))",
+              {/* use the svg assigned to this cursor */}
+              <motion.img
+                src={c.svg}
+                alt={`floating-cursor-${c.id}`}
+                className="w-8 h-8"
+                style={{ filter: "drop-shadow(0 6px 14px rgba(0,0,0,0.35))" }}
+                animate={{ y: [0, -4, 2, 0], rotate: [0, -8, 6, 0] }}
+                transition={{
+                  repeat: Infinity,
+                  duration: dur / 2,
+                  ease: "easeInOut",
+                  delay: i * 0.1,
                 }}
               />
-              {/* pill label */}
-              <div
-                style={{
-                  background: c.color,
-                  color: "#08101A",
-                  padding: "6px 10px",
-                  borderRadius: 999,
-                  fontSize: 13,
-                  fontWeight: 600,
-                  transform: "translateY(-6px)",
-                  boxShadow: "0 6px 18px rgba(0,0,0,0.35)",
-                }}
-              >
-                {c.pill}
-              </div>
             </motion.div>
           </motion.div>
         );
@@ -109,7 +84,7 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* loc */}
+      {/* content */}
       <div className="name-sec flex gap-2 items-center">
         <h1 className="text-8xl font-medium text-[#A374FF]">DIGITAL</h1>
         <div className="flex flex-col">
@@ -118,12 +93,10 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* exp  */}
       <div className="name-sec flex gap-2 items-center">
         <h1 className="text-8xl font-medium text-[#FFD074]">EXPERIENCE</h1>
       </div>
 
-      {/* designer  */}
       <div className="name-sec flex gap-4 items-center">
         <h1 className="text-8xl font-medium text-[#FFFFE3]">DESIGNER</h1>
 
@@ -137,12 +110,11 @@ const Hero = () => {
             animate={{ opacity: [1, 0.2, 1], scale: [1, 0.7, 1] }}
             transition={{ repeat: Infinity, duration: 1.2 }}
             className="h-4 w-4 rounded-full bg-[#37C713] inline-block z-10 relative"
-          ></motion.span>
+          />
           <span className="relative z-10">Let's Connect</span>
         </motion.button>
       </div>
 
-      {/* role */}
       <div className="name-sec flex flex-row-reverse gap-2 items-center">
         <h1 className="text-8xl font-medium text-[#17F1D1]">
           <span className="text-[#FFFFE3]">&</span> DEVELOPER
