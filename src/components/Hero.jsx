@@ -104,7 +104,7 @@ const Hero = () => {
           drag
           dragConstraints={{ left: 10, right: 10, top: 0, bottom: 0 }}
           whileHover={{ backgroundColor: "#ffffe3", color: "#111" }}
-          className="bg-transparent py-4 px-6 font-semibold border-1 border-zinc-800 rounded-4xl text-lg cursor-pointer flex items-center gap-2 relative overflow-hidden"
+          className="bg-transparent py-4 px-6 font-semibold border-2 border-zinc-800 rounded-4xl text-lg cursor-pointer flex items-center gap-2 relative overflow-hidden"
         >
           <motion.span
             animate={{ opacity: [1, 0.2, 1], scale: [1, 0.7, 1] }}
