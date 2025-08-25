@@ -1,4 +1,4 @@
-import photo from "../assets/photo.png";
+import photo from "../assets/avtar.png";
 import { motion } from "framer-motion";
 import cursor from "../assets/Cursor.svg";
 import dev from "../assets/dev.svg";
@@ -6,8 +6,8 @@ import usernamer from "../assets/username.svg";
 
 const FloatingCursors = () => {
   const cursors = [
-    { id: 1, svg: cursor, start: { top: "20%", left: "8%" } },
-    { id: 2, svg: dev, start: { top: "30%", left: "78%" } },
+    { id: 1, svg: cursor, start: { top: "65%", left: "25%" } },
+    { id: 2, svg: dev, start: { top: "45%", left: "73%" } },
     { id: 3, svg: usernamer, start: { top: "8%", left: "48%" } },
   ];
 
@@ -51,7 +51,7 @@ const FloatingCursors = () => {
                 alt={`floating-cursor-${c.id}`}
                 className="w-8 h-8"
                 style={{ filter: "drop-shadow(0 6px 14px rgba(0,0,0,0.35))" }}
-                animate={{ y: [0, -4, 2, 0], rotate: [0, -8, 6, 0] }}
+                animate={{ y: [0, -4, 3, 0], rotate: [2, -8, 6, 0] }}
                 transition={{
                   repeat: Infinity,
                   duration: dur / 2,
