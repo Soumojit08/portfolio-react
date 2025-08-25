@@ -51,8 +51,8 @@ const App = () => {
         items={items}
         baseColor="#0E100F"
         menuColor="#fff"
-        buttonBgColor="#fff"
-        buttonTextColor="#0E100F"
+        // buttonBgColor="#fff"
+        // buttonTextColor="#0E100F"
         ease="back.out(1.7)"
       />
       <Routes>

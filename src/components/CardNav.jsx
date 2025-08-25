@@ -2,6 +2,7 @@ import { useLayoutEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 // use your own icon import if react-icons is not available
 import { GoArrowUpRight } from "react-icons/go";
+import { motion } from "framer-motion";
 
 const CardNav = ({
   logo,
@@ -151,7 +152,7 @@ const CardNav = ({
           <div
             className={`hamburger-menu ${
               isHamburgerOpen ? "open" : ""
-            } group h-full flex flex-col items-center justify-center cursor-pointer gap-[6px] order-2 mr-2 md:order-none`}
+            } group h-full flex flex-col items-center justify-center cursor-pointer gap-[6px] order-2 md:ml-4 mr-4 md:order-none`}
             onClick={toggleMenu}
             role="button"
             aria-label={isExpanded ? "Close menu" : "Open menu"}
@@ -174,13 +175,21 @@ const CardNav = ({
             <img src={logo} alt={logoAlt} className="logo h-[120px]" />
           </div>
 
-          <button
+          {/* <button
             type="button"
-            className="card-nav-cta-button hidden md:inline-flex border-0 rounded-lg px-2 py-2 font-normal cursor-pointer hover:bg-transparent hover:scale-95"
+            className="card-nav-cta-button hidden md:inline-flex border-0 rounded-lg px-2 py-2 font-normal cursor-pointer hover:bg-transparent hover:scale-95 mr-4"
             style={{ backgroundColor: buttonBgColor, color: buttonTextColor }}
           >
             Contact Me
-          </button>
+          </button> */}
+          <motion.button
+            drag
+            dragConstraints={{ left: 5, right: 5, top: 0, bottom: 0 }}
+            whileHover={{ backgroundColor: "#ffffe3", color: "#111" }}
+            className="bg-transparent py-2 px-4 font-semibold border-1 border-zinc-800 rounded-4xl text-lg cursor-pointer flex items-center gap-2 relative overflow-hidden"
+          >
+            <span className="relative z-10">Contact me</span>
+          </motion.button>
         </div>
 
         <div

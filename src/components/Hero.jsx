@@ -69,7 +69,7 @@ const FloatingCursors = () => {
 
 const Hero = () => {
   return (
-    <div className="flex flex-col items-center top-25  px-6 text-center relative min-h-screen ">
+    <div className="flex flex-col items-center top-20  px-6 text-center relative min-h-screen ">
       {/* avtar */}
       <div className="name-sec flex gap-4 items-center">
         <motion.div
@@ -128,6 +128,17 @@ const Hero = () => {
 
       {/* floating cursors overlay */}
       <FloatingCursors />
+
+      <div className="mt-4">
+        <h2 className="text-3xl">
+          I create a digital experience that borders on
+        </h2>
+        <h2 className="text-3xl">
+          <span className="text-[#A374FF]">efficiency</span>,{" "}
+          <span className="text-[#FFD074]">aesthetics</span> and{" "}
+          <span className="text-[#17F1D1]">functionality</span>.
+        </h2>
+      </div>
     </div>
   );
 };
