@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Hero from "./components/Hero";
 import CardNav from "./components/CardNav";
 import logo from "./assets/logo-removebg-preview.png";
+import Info from "./components/Info";
 
 const App = () => {
   const lenis = useLenis((lenis) => {
@@ -55,9 +56,8 @@ const App = () => {
         // buttonTextColor="#0E100F"
         ease="back.out(1.7)"
       />
-      <Routes>
-        <Route path="/" element={<Hero />} />
-      </Routes>
+      <Hero />
+      <Info />
     </div>
   );
 };

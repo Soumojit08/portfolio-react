@@ -18,8 +18,8 @@ const FloatingCursors = () => {
         return (
           <motion.div
             key={c.id}
+            // keep cursors normal size so they don't overflow/overlap next section
             initial={{ opacity: 1, scale: 2.5 }}
-            animate={{ opacity: [1], scale: [2.5] }}
             transition={{
               repeat: Infinity,
               duration: dur,
@@ -69,7 +69,7 @@ const FloatingCursors = () => {
 
 const Hero = () => {
   return (
-    <div className="flex flex-col items-center top-20  px-6 text-center relative min-h-screen ">
+    <div className="flex flex-col items-center px-6 text-center relative min-h-screen border-b border-zinc-700 z-10 overflow-hidden mt-20">
       {/* avtar */}
       <div className="name-sec flex gap-4 items-center">
         <motion.div
