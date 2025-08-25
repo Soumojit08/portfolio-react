@@ -3,10 +3,11 @@ import { FaXTwitter, FaLinkedinIn, FaDribbble } from "react-icons/fa6";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import { LuGithub } from "react-icons/lu";
 import { motion } from "framer-motion";
+import { PiArrowBendLeftDownLight } from "react-icons/pi";
 
 const Info = () => {
   return (
-    <section className="bg-[#0E100F] text-white">
+    <section className="bg-[#0E100F] text-white ">
       <div className=" mx-auto px-6 py-4 flex items-center gap-6">
         {/* left column: fixed width, left aligned */}
         <div className="w-1/3">
@@ -120,6 +121,12 @@ const Info = () => {
             My blend of design, coding, and interaction expertise distinguishes
             me within the tech industry.
           </h5>
+        </div>
+      </div>
+
+      <div className="relative w-full h-[1px] bg-zinc-700">
+        <div className="w-20 h-20 rounded-full bg-amber-50 absolute z-10 left-[90%] -top-10 flex items-center justify-center cursor-pointer">
+          <PiArrowBendLeftDownLight size={56} color="#111" />
         </div>
       </div>
     </section>
