@@ -13,7 +13,7 @@ import {
   SiNumpy,
   SiPandas,
   SiDocker,
-  SiAwslambda,
+  SiFigma,
   SiGit,
   SiGithub,
 } from "react-icons/si";
@@ -80,8 +80,8 @@ const TechStack = () => {
       href: "https://tailwindcss.com",
     },
     {
-      node: <SiAwslambda />,
-      title: "AWS",
+      node: <SiFigma />,
+      title: "Figma",
       href: "https://tailwindcss.com",
     },
     {
@@ -103,11 +103,21 @@ const TechStack = () => {
 
   return (
     <div className="w-full bg-[#0E100F] text-white min-h-screen">
-      <h2 className="uppercase text-4xl text-[#A374FF] mb-8 px-6">
+      <h2 className="uppercase text-4xl text-[#A374FF] mb-6 px-6">
         MY Tech-stack
       </h2>
 
-      <div className="mx-auto mt-20">
+      <div className="w-full px-48">
+        <h2 className="text-center text-3xl">
+          My expertise spans a diverse range of{" "}
+          <span className="text-[#FFD074]">technologies</span>, enabling me to
+          deliver comprehensive and
+          <span className="text-[#17F1D1]"> cutting-edge solutions</span> across
+          various platforms.
+        </h2>
+      </div>
+
+      <div className="mx-auto mt-15">
         <div
           style={{
             height: "200px",

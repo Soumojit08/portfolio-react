@@ -69,7 +69,7 @@ const About = () => {
         </div>
 
         {/* Section title */}
-        <h2 className="uppercase text-4xl text-[#A374FF] text-center mb-8">
+        <h2 className="uppercase text-4xl text-[#A374FF] mb-8">
           what i do
         </h2>
 
