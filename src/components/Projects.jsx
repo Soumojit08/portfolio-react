@@ -3,23 +3,23 @@ import FlowingMenu from "./FlowingMenu";
 const Projects = () => {
   const demoItems = [
     {
-      link: "#",
-      text: "Mojave",
+      link: "https://medicon-za1z.vercel.app/",
+      text: "Medicon",
       image: "https://picsum.photos/600/400?random=1",
     },
     {
       link: "#",
-      text: "Sonoma",
+      text: "Docs-File System",
       image: "https://picsum.photos/600/400?random=2",
     },
     {
       link: "#",
-      text: "Monterey",
+      text: "Blog Application",
       image: "https://picsum.photos/600/400?random=3",
     },
     {
       link: "#",
-      text: "Sequoia",
+      text: "Chat Application",
       image: "https://picsum.photos/600/400?random=4",
     },
   ];
