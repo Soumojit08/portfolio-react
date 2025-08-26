@@ -3,8 +3,14 @@ import twitter from "../assets/icons/twitter.svg";
 import github from "../assets/icons/github.svg";
 import facebook from "../assets/icons/facebook.svg";
 import discord from "../assets/icons/discord.svg";
+import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
+import { useState } from "react";
 
 const Footer = () => {
+  const [hovContact, setHovContact] = useState(false);
+  const [hovProjects, setHovProjects] = useState(false);
+
   return (
     <div className="bg-[#0E100F] p-8 h-screen">
       <div className="h-11/12 flex  justify-between border-1 rounded-3xl border-zinc-700">
@@ -66,7 +72,53 @@ const Footer = () => {
         </div>
 
         {/* cta btns  */}
-        <div></div>
+        <div className="py-14 px-12 text-xl leading-7">
+          <motion.button
+            className="flex items-center gap-3 border-b-1 border-zinc-700 py-4 cursor-pointer"
+            onMouseEnter={() => setHovContact(true)}
+            onMouseLeave={() => setHovContact(false)}
+            whileHover={{ color: "#178BDA" }}
+          >
+            <span className="justify-start flex flex-col text-left">
+              <h1 className="text-2xl font-medium">Contact me</h1>
+              <h5 className="text-base text-zinc-300 font-medium">
+                say hello!
+              </h5>
+            </span>
+            <div className="w-10 h-10 border-1 border-zinc-700 rounded-full flex items-center justify-center">
+              <ArrowRight
+                color="#0AE448"
+                style={{
+                  transition: "transform 0.3s",
+                  transform: hovContact ? "rotate(-45deg)" : "rotate(0deg)",
+                }}
+              />
+            </div>
+          </motion.button>
+
+          <motion.button
+            onMouseEnter={() => setHovProjects(true)}
+            onMouseLeave={() => setHovProjects(false)}
+            className="flex items-center gap-3 py-4 cursor-pointer"
+            whileHover={{ color: "#178BDA" }}
+          >
+            <span className="justify-start flex flex-col text-left">
+              <h1 className="text-2xl font-medium">My Projects</h1>
+              <h5 className="text-base text-zinc-300 font-medium">
+                Explore Projects
+              </h5>
+            </span>
+            <div className="w-10 h-10 border-1 border-zinc-700 rounded-full flex items-center justify-center">
+              <ArrowRight
+                color="#0AE448"
+                style={{
+                  transition: "transform 0.3s",
+                  transform: hovProjects ? "rotate(-45deg)" : "rotate(0deg)",
+                }}
+              />
+            </div>
+          </motion.button>
+        </div>
       </div>
     </div>
   );
