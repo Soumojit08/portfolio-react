@@ -20,3 +20,22 @@
   scrollbar-width: thin;
   scrollbar-color: #A374FF #1E1E1E; /* thumb color | track color */
 }
+
+.translate-x-101 {
+  transform: translateX(101%);
+}
+
+/* Marquee animation keyframes */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Marquee animation class */
+.animate-marquee {
+  animation: marquee 15s linear infinite;
+}
