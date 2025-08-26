@@ -5,6 +5,7 @@ import CardNav from "./components/CardNav";
 import logo from "./assets/logo-removebg-preview.png";
 import Info from "./components/Info";
 import About from "./components/About";
+import Projects from "./components/Projects";
 
 const App = () => {
   const lenis = useLenis((lenis) => {
@@ -60,6 +61,7 @@ const App = () => {
       <Hero />
       <Info />
       <About />
+      <Projects />
     </div>
   );
 };

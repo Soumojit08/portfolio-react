@@ -6,6 +6,7 @@ import {
   Palette,
   Laptop2,
 } from "lucide-react";
+import { MdWorkHistory } from "react-icons/md";
 
 const About = () => {
   const cards = [
@@ -40,8 +41,8 @@ const About = () => {
   ];
 
   return (
-    <section className="bg-[#0E100F] text-white min-h-screen px-6 py-12">
-      <div className="mx-auto">
+    <section className="bg-[#0E100F] text-white min-h-screen py-12">
+      <div className="mx-auto px-6">
         {/* Intro text */}
         <div className="mb-8 w-full md:w-2/5">
           <h3 className="text-2xl tracking-tight leading-8">
@@ -90,6 +91,12 @@ const About = () => {
               </motion.article>
             );
           })}
+        </div>
+      </div>
+
+      <div className="relative w-full h-[1px] bg-zinc-700 mt-20">
+        <div className="w-20 h-20 rounded-full bg-amber-50 absolute z-10 left-[90%] -top-10 flex items-center justify-center cursor-pointer">
+          <MdWorkHistory size={56} color="#111" />
         </div>
       </div>
     </section>
