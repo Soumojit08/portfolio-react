@@ -40,6 +40,8 @@ const About = () => {
     },
   ];
 
+
+
   return (
     <section className="bg-[#0E100F] text-white min-h-screen py-12">
       <div className="mx-auto px-6">

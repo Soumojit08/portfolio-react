@@ -6,6 +6,7 @@ import logo from "./assets/logo-removebg-preview.png";
 import Info from "./components/Info";
 import About from "./components/About";
 import Projects from "./components/Projects";
+import TechStack from "./components/TechStack";
 
 const App = () => {
   const lenis = useLenis((lenis) => {
@@ -62,6 +63,7 @@ const App = () => {
       <Info />
       <About />
       <Projects />
+      <TechStack />
     </div>
   );
 };
