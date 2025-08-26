@@ -109,8 +109,8 @@ const TechStack = () => {
 
       <div className="w-full px-48">
         <h2 className="text-center text-3xl">
-          My expertise spans a diverse range of{" "}
-          <span className="text-[#FFD074]">technologies</span>, enabling me to
+          My expertise spans a diverse range of
+          <span className="text-[#FFD074]"> technologies</span>, enabling me to
           deliver comprehensive and
           <span className="text-[#17F1D1]"> cutting-edge solutions</span> across
           various platforms.
