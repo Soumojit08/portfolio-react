@@ -7,6 +7,7 @@ import Info from "./components/Info";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import TechStack from "./components/TechStack";
+import Footer from "./components/Footer";
 
 const App = () => {
   const lenis = useLenis((lenis) => {
@@ -64,6 +65,7 @@ const App = () => {
       <About />
       <Projects />
       <TechStack />
+      <Footer />
     </div>
   );
 };

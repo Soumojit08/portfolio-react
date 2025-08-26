@@ -102,7 +102,7 @@ const TechStack = () => {
   ];
 
   return (
-    <div className="w-full bg-[#0E100F] text-white min-h-screen">
+    <div className="w-full bg-[#0E100F] text-white">
       <h2 className="uppercase text-4xl text-[#A374FF] mb-6 px-6">
         MY Tech-stack
       </h2>
@@ -120,7 +120,7 @@ const TechStack = () => {
       <div className="mx-auto mt-15">
         <div
           style={{
-            height: "200px",
+            height: "180px",
             position: "relative",
             overflow: "hidden",
           }}
@@ -129,7 +129,7 @@ const TechStack = () => {
             logos={techLogos}
             speed={120}
             direction="left"
-            logoHeight={48}
+            logoHeight={64}
             gap={40}
             pauseOnHover
             scaleOnHover
