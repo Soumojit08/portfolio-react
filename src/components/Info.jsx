@@ -7,19 +7,21 @@ import { PiArrowBendLeftDownLight } from "react-icons/pi";
 
 const Info = () => {
   return (
-    <section className="bg-[#0E100F] text-white ">
-      <div className=" mx-auto px-6 py-4 flex items-center gap-6">
+    <section className="bg-[#0E100F] text-white">
+      <div className="mx-auto px-3 sm:px-6 py-4 flex flex-col md:flex-row items-center gap-4 md:gap-6 w-full ">
         {/* left column: fixed width, left aligned */}
-        <div className="w-1/3">
+        <div className="w-full md:w-1/3 mb-4 md:mb-0">
           <div className="text-left">
-            <h5 className="text-lg font-medium">// Design & Code </h5>
-            <h5 className=" text-lg font-medium">Engage</h5>
+            <h5 className="text-base sm:text-lg font-medium">
+              // Design & Code{" "}
+            </h5>
+            <h5 className="text-base sm:text-lg font-medium">Engage</h5>
           </div>
         </div>
 
         {/* center column: grows and keeps icons perfectly centered */}
-        <div className="flex-1 flex justify-center w-1/3">
-          <div className="flex items-center gap-2 cursor-pointer px-6 py-3 rounded-full border border-zinc-700 bg-transparent">
+        <div className="w-full md:flex-1 flex justify-center md:w-1/3">
+          <div className="flex flex-wrap items-center gap-2 sm:gap-3 cursor-pointer px-2 sm:px-6 py-3 rounded-full border border-zinc-700 bg-transparent justify-center">
             <motion.span
               className="w-10 h-10 rounded-full bg-[#FFFFE3] flex items-center justify-center text-[#0E100F] relative"
               whileHover={{
@@ -89,35 +91,37 @@ const Info = () => {
         </div>
 
         {/* right column: fixed width, right aligned */}
-        <div className="w-1/3 flex justify-end">
-          <button className="flex items-center gap-1.5 px-4 py-3 rounded-full border border-zinc-700 bg-transparent">
-            <span className="w-10 h-10 rounded-full bg-[#FFFFE3] flex items-center justify-center text-[#0E100F]">
-              <Mail size={28} />
+        <div className="w-full md:w-1/3 flex justify-end">
+          <button className="flex items-center gap-1.5 px-2 sm:px-4 py-3 rounded-full border border-zinc-700 bg-transparent text-xs sm:text-base">
+            <span className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#FFFFE3] flex items-center justify-center text-[#0E100F]">
+              <Mail size={22} className="sm:size-7" />
             </span>
-            <span className="text-base">soumojitbanerjee08@gmail.com</span>
+            <span className="truncate max-w-[120px] sm:max-w-none">
+              soumojitbanerjee08@gmail.com
+            </span>
           </button>
         </div>
       </div>
 
-      <div className="flex px-6 py-6 items-center justify-between">
-        <div className="w-[60%]">
-          <h1 className="text-4xl font-normal capitalize tracking-wider">
+      <div className="flex flex-col md:flex-row px-3 sm:px-6 py-6 items-start md:items-center justify-between gap-6 md:gap-0">
+        <div className="w-full md:w-[60%]">
+          <h1 className="text-xl sm:text-2xl md:text-4xl font-normal capitalize tracking-wider">
             Empowering success in the digital landscape.
           </h1>
-          <h1 className="text-4xl font-normal capitalize tracking-wider">
+          <h1 className="text-xl sm:text-2xl md:text-4xl font-normal capitalize tracking-wider">
             Together, we shape a visionary future,
           </h1>
-          <h1 className="text-4xl font-normal capitalize tracking-wider">
+          <h1 className="text-xl sm:text-2xl md:text-4xl font-normal capitalize tracking-wider">
             delivering on promises and continuously pioneering innovation.
           </h1>
 
-          <div className="py-10 text-5xl leading-9.5 text-[#0AE448] font-semibold">
+          <div className="py-6 sm:py-10 text-2xl sm:text-4xl md:text-5xl leading-9.5 text-[#0AE448] font-semibold">
             <h1>Coding the Future</h1>
             <h1>Architecting Innovation</h1>
           </div>
         </div>
-        <div className="w-[20%] pb-44">
-          <h5>
+        <div className="w-full md:w-[20%] pb-8 md:pb-44">
+          <h5 className="text-sm sm:text-base">
             My blend of design, coding, and interaction expertise distinguishes
             me within the tech industry.
           </h5>
@@ -125,8 +129,12 @@ const Info = () => {
       </div>
 
       <div className="relative w-full h-[1px] bg-zinc-700">
-        <div className="w-20 h-20 rounded-full bg-amber-50 absolute z-10 left-[90%] -top-10 flex items-center justify-center cursor-pointer">
-          <PiArrowBendLeftDownLight size={56} color="#111" />
+        <div className="w-14 h-14 sm:w-20 sm:h-20 rounded-full bg-amber-50 absolute z-10 left-1/2 sm:left-[90%] -top-7 sm:-top-10 flex items-center justify-center cursor-pointer -translate-x-1/2 sm:translate-x-0">
+          <PiArrowBendLeftDownLight
+            size={36}
+            className="sm:size-14"
+            color="#111"
+          />
         </div>
       </div>
     </section>

@@ -48,7 +48,7 @@ const App = () => {
   ];
 
   return (
-    <div className="bg-[#0E100F] min-h-screen text-white">
+    <div className="bg-[#0E100F] min-h-screen overflow-x-hidden text-white">
       <ReactLenis root />
       <CardNav
         logo={logo}
