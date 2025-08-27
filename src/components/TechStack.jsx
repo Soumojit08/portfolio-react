@@ -102,13 +102,13 @@ const TechStack = () => {
   ];
 
   return (
-    <div className="w-full bg-[#0E100F] text-white">
-      <h2 className="uppercase text-4xl text-[#A374FF] mb-6 px-6">
+    <div className="w-full bg-[#0E100F] text-white py-8 sm:py-12">
+      <h2 className="uppercase text-2xl sm:text-4xl text-[#A374FF] mb-4 sm:mb-6 px-3 sm:px-6 text-center sm:text-left">
         MY Tech-stack
       </h2>
 
-      <div className="w-full px-48">
-        <h2 className="text-center text-3xl">
+      <div className="w-full px-3 sm:px-8 md:px-24 lg:px-48 mb-6">
+        <h2 className="text-center text-base sm:text-2xl md:text-3xl">
           My expertise spans a diverse range of
           <span className="text-[#FFD074]"> technologies</span>, enabling me to
           deliver comprehensive and
@@ -117,10 +117,10 @@ const TechStack = () => {
         </h2>
       </div>
 
-      <div className="mx-auto mt-15">
+      <div className="mx-auto mt-8 sm:mt-12 max-w-5xl w-full">
         <div
           style={{
-            height: "180px",
+            height: "120px",
             position: "relative",
             overflow: "hidden",
           }}
@@ -129,8 +129,8 @@ const TechStack = () => {
             logos={techLogos}
             speed={120}
             direction="left"
-            logoHeight={64}
-            gap={40}
+            logoHeight={48}
+            gap={28}
             pauseOnHover
             scaleOnHover
             fadeOut
