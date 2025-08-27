@@ -1,5 +1,4 @@
 import { ReactLenis, useLenis } from "lenis/react";
-import { Route, Routes } from "react-router-dom";
 import Hero from "./components/Hero";
 import CardNav from "./components/CardNav";
 import logo from "./assets/logo-removebg-preview.png";
@@ -8,6 +7,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import TechStack from "./components/TechStack";
 import Footer from "./components/Footer";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 const App = () => {
   const lenis = useLenis((lenis) => {
@@ -66,6 +66,8 @@ const App = () => {
       <Projects />
       <TechStack />
       <Footer />
+
+      <SpeedInsights />
     </div>
   );
 };
