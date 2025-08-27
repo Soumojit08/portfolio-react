@@ -129,40 +129,24 @@ const Footer = () => {
         </div>
 
         {/* svgs  */}
-        <div className="w-full flex items-end justify-center gap-x-1 sm:gap-x-4 overflow-x-auto scrollbar-thin scrollbar-thumb-[#A374FF] scrollbar-track-transparent py-2">
-          <img
-            src={s}
-            className="h-[48px] sm:h-[72px] md:h-[96px] lg:h-[120px]"
-            alt="s"
-          />
-          <img
-            src={o}
-            className="h-[48px] sm:h-[72px] md:h-[96px] lg:h-[120px]"
-            alt="o"
-          />
-          <img
-            src={u}
-            className="h-[48px] sm:h-[72px] md:h-[96px] lg:h-[120px]"
-            alt="u"
-          />
-          <img
-            src={m}
-            className="h-[48px] sm:h-[72px] md:h-[96px] lg:h-[120px]"
-            alt="m"
-          />
+        <div className="w-full flex items-end justify-center gap-x-0 sm:gap-x-4">
+          <img src={s} className="h-[48px] md:h-[130px] lg:h-[210px]" alt="s" />
+          <img src={o} className="h-[48px] md:h-[130px] lg:h-[210px]" alt="o" />
+          <img src={u} className="h-[48px] md:h-[130px] lg:h-[210px]" alt="u" />
+          <img src={m} className="h-[48px] md:h-[130px] lg:h-[210px]" alt="m" />
           <img
             src={o}
-            className="h-[48px] sm:h-[72px] md:h-[96px] lg:h-[120px]"
+            className="h-[48px] md:h-[130px] lg:h-[210px]"
             alt="o2"
           />
           <img
             src={zero}
-            className="h-[48px] sm:h-[72px] md:h-[96px] lg:h-[120px]"
+            className="h-[48px] md:h-[130px] lg:h-[210px]"
             alt="zero"
           />
           <img
             src={eight}
-            className="h-[48px] sm:h-[72px] md:h-[96px] lg:h-[120px]"
+            className="h-[48px] md:h-[130px] lg:h-[210px]"
             alt="eight"
           />
         </div>
