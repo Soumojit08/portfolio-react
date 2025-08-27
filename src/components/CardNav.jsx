@@ -186,7 +186,7 @@ const CardNav = ({
             drag
             dragConstraints={{ left: 5, right: 5, top: 0, bottom: 0 }}
             whileHover={{ backgroundColor: "#ffffe3", color: "#111" }}
-            className="bg-transparent py-2 px-4 font-semibold border-[1.5px] border-zinc-800 rounded-4xl text-lg cursor-pointer flex items-center gap-2 relative overflow-hidden"
+            className="hidden md:inline-flex bg-transparent py-2 px-4 font-semibold border-[1.5px] border-zinc-800 rounded-4xl text-lg cursor-pointer items-center gap-2 relative overflow-hidden"
           >
             <span className="relative z-10">Contact me</span>
           </motion.button>
