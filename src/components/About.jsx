@@ -44,7 +44,7 @@ const About = () => {
 
   return (
     <section className="bg-[#0E100F] text-white min-h-screen py-8 sm:py-12">
-      <div className="mx-auto px-3 sm:px-6 max-w-7xl">
+      <div className="mx-auto px-3 sm:px-6">
         {/* Intro text */}
         <div className="mb-8 w-full md:w-2/5">
           <h3 className="text-lg sm:text-2xl tracking-tight leading-7 sm:leading-8">

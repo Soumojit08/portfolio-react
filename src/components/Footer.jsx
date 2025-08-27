@@ -18,11 +18,11 @@ const Footer = () => {
   const [hovProjects, setHovProjects] = useState(false);
 
   return (
-    <div className="bg-[#0E100F] p-8 h-screen">
-      <div className="h-11/12 flex flex-col justify-between gap-30 overflow-hidden border-1 rounded-3xl border-zinc-700">
-        <div className="flex justify-between">
+    <div className="bg-[#0E100F] p-4 sm:p-8 min-h-[60vh]">
+      <div className="flex flex-col gap-10 sm:gap-20 overflow-hidden border rounded-3xl border-zinc-700 h-full">
+        <div className="flex flex-col lg:flex-row justify-between gap-8 sm:gap-0">
           {/* text  */}
-          <div className="py-12 px-12 text-3xl font-semibold leading-8">
+          <div className="py-6 sm:py-12 px-4 sm:px-12 text-2xl sm:text-3xl font-semibold leading-8">
             <h1>
               Where <span className="text-[#A374FF]">aesthetic</span> &
             </h1>
@@ -32,11 +32,11 @@ const Footer = () => {
           </div>
 
           {/* navigation  */}
-          <div className="py-12 px-12 text-xl leading-8">
-            <h4 className="text-[#FF8709] mb-6 font-semibold text-2xl">
+          <div className="py-6 sm:py-12 px-4 sm:px-12 text-lg sm:text-xl leading-8">
+            <h4 className="text-[#FF8709] mb-4 sm:mb-6 font-semibold text-xl sm:text-2xl">
               Explore
             </h4>
-            <ul className="flex flex-col gap-4 font-medium">
+            <ul className="flex flex-col gap-2 sm:gap-4 font-medium">
               <li className="cursor-pointer hover:text-[#178BDA]">Home</li>
               <li className="cursor-pointer hover:text-[#178BDA]">About Me</li>
               <li className="cursor-pointer hover:text-[#178BDA]">Doctor</li>
@@ -44,13 +44,13 @@ const Footer = () => {
           </div>
 
           {/* links  */}
-          <div className="py-12 px-12 text-xl leading-8">
-            <h4 className="text-[#17F1D1] mb-6 font-semibold text-2xl">
+          <div className="py-6 sm:py-12 px-4 sm:px-12 text-lg sm:text-xl leading-8">
+            <h4 className="text-[#17F1D1] mb-4 sm:mb-6 font-semibold text-xl sm:text-2xl">
               Follow Me
             </h4>
 
-            <div className="flex font-normal gap-8">
-              <ul className="flex flex-col gap-4">
+            <div className="flex font-normal gap-4 sm:gap-8">
+              <ul className="flex flex-col gap-2 sm:gap-4">
                 <li className="cursor-pointer hover:text-[#178BDA] flex items-center gap-1">
                   <img src={linkedin} className="h-8 w-8" />
                   LinkedIn
@@ -65,7 +65,7 @@ const Footer = () => {
                 </li>
               </ul>
 
-              <ul className="flex flex-col gap-4">
+              <ul className="flex flex-col gap-2 sm:gap-4">
                 <li className="cursor-pointer hover:text-[#178BDA] flex items-center gap-1">
                   <img src={facebook} className="h-8 w-8" />
                   Facebook
@@ -79,20 +79,20 @@ const Footer = () => {
           </div>
 
           {/* cta btns  */}
-          <div className="py-14 px-12 text-xl leading-7">
+          <div className="py-8 sm:py-14 px-4 sm:px-12 text-lg sm:text-xl leading-7 flex flex-col gap-2">
             <motion.button
-              className="flex items-center gap-3 border-b-1 border-zinc-700 py-4 cursor-pointer"
+              className="flex items-center gap-2 sm:gap-3 border-b border-zinc-700 py-3 sm:py-4 cursor-pointer"
               onMouseEnter={() => setHovContact(true)}
               onMouseLeave={() => setHovContact(false)}
               whileHover={{ color: "#178BDA" }}
             >
               <span className="justify-start flex flex-col text-left">
-                <h1 className="text-2xl font-medium">Contact me</h1>
-                <h5 className="text-base text-zinc-300 font-medium">
+                <h1 className="text-lg sm:text-2xl font-medium">Contact me</h1>
+                <h5 className="text-xs sm:text-base text-zinc-300 font-medium">
                   say hello!
                 </h5>
               </span>
-              <div className="w-10 h-10 border-1 border-zinc-700 rounded-full flex items-center justify-center">
+              <div className="w-8 h-8 sm:w-10 sm:h-10 border border-zinc-700 rounded-full flex items-center justify-center">
                 <ArrowRight
                   color="#0AE448"
                   style={{
@@ -106,16 +106,16 @@ const Footer = () => {
             <motion.button
               onMouseEnter={() => setHovProjects(true)}
               onMouseLeave={() => setHovProjects(false)}
-              className="flex items-center gap-3 py-4 cursor-pointer"
+              className="flex items-center gap-2 sm:gap-3 py-3 sm:py-4 cursor-pointer"
               whileHover={{ color: "#178BDA" }}
             >
               <span className="justify-start flex flex-col text-left">
-                <h1 className="text-2xl font-medium">My Projects</h1>
-                <h5 className="text-base text-zinc-300 font-medium">
+                <h1 className="text-lg sm:text-2xl font-medium">My Projects</h1>
+                <h5 className="text-xs sm:text-base text-zinc-300 font-medium">
                   Explore Projects
                 </h5>
               </span>
-              <div className="w-10 h-10 border-1 border-zinc-700 rounded-full flex items-center justify-center">
+              <div className="w-8 h-8 sm:w-10 sm:h-10 border border-zinc-700 rounded-full flex items-center justify-center">
                 <ArrowRight
                   color="#0AE448"
                   style={{
@@ -129,27 +129,56 @@ const Footer = () => {
         </div>
 
         {/* svgs  */}
-        <div className="w-full flex ">
-          <img src={s} className="h-[220px]" />
-          <img src={o} className="h-[220px]" />
-          <img src={u} className="h-[220px]" />
-          <img src={m} className="h-[220px]" />
-          <img src={o} className="h-[220px]" />
-          <img src={zero} className="h-[220px] " alt="zero" />
-          <img src={eight} className="h-[220px]" alt="eight" />
+        <div className="w-full flex items-end justify-center gap-x-1 sm:gap-x-4 overflow-x-auto scrollbar-thin scrollbar-thumb-[#A374FF] scrollbar-track-transparent py-2">
+          <img
+            src={s}
+            className="h-[48px] sm:h-[72px] md:h-[96px] lg:h-[120px]"
+            alt="s"
+          />
+          <img
+            src={o}
+            className="h-[48px] sm:h-[72px] md:h-[96px] lg:h-[120px]"
+            alt="o"
+          />
+          <img
+            src={u}
+            className="h-[48px] sm:h-[72px] md:h-[96px] lg:h-[120px]"
+            alt="u"
+          />
+          <img
+            src={m}
+            className="h-[48px] sm:h-[72px] md:h-[96px] lg:h-[120px]"
+            alt="m"
+          />
+          <img
+            src={o}
+            className="h-[48px] sm:h-[72px] md:h-[96px] lg:h-[120px]"
+            alt="o2"
+          />
+          <img
+            src={zero}
+            className="h-[48px] sm:h-[72px] md:h-[96px] lg:h-[120px]"
+            alt="zero"
+          />
+          <img
+            src={eight}
+            className="h-[48px] sm:h-[72px] md:h-[96px] lg:h-[120px]"
+            alt="eight"
+          />
         </div>
       </div>
 
-      <div className="flex items-center justify-between">
-        <h2 className="flex items-center text-2xl font-semibold gap-1">
+      <div className="flex flex-col sm:flex-row items-center justify-between gap-2 sm:gap-0 mt-4">
+        <h2 className="flex items-center text-base sm:text-2xl font-semibold gap-1 text-center">
           soumojitbanerjee08
           <span>
             <Copyright />
           </span>
           2025 - Privacy Policy
         </h2>
-
-        <h2 className="text-2xl font-semibold">Kolkata, India</h2>
+        <h2 className="text-base sm:text-2xl font-semibold text-center">
+          Kolkata, India
+        </h2>
       </div>
     </div>
   );
