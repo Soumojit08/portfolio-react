@@ -4,7 +4,7 @@ import github from "../assets/icons/github.svg";
 import facebook from "../assets/icons/facebook.svg";
 import discord from "../assets/icons/discord.svg";
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Copyright } from "lucide-react";
 import { useState } from "react";
 import s from "../assets/name-svg/s.svg";
 import o from "../assets/name-svg/o.svg";
@@ -138,6 +138,18 @@ const Footer = () => {
           <img src={zero} className="h-[220px] " alt="zero" />
           <img src={eight} className="h-[220px]" alt="eight" />
         </div>
+      </div>
+
+      <div className="flex items-center justify-between">
+        <h2 className="flex items-center text-2xl font-semibold gap-1">
+          soumojitbanerjee08
+          <span>
+            <Copyright />
+          </span>
+          2025 - Privacy Policy
+        </h2>
+
+        <h2 className="text-2xl font-semibold">Kolkata, India</h2>
       </div>
     </div>
   );
